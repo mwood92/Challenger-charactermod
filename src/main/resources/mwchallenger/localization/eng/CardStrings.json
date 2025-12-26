@@ -11,7 +11,7 @@
   },
   "${modID}:Parry": {
     "NAME": "Parry",
-    "DESCRIPTION": "Gain !B! block. NL Enter !Y! Parry",
+    "DESCRIPTION": "Gain !B! block. NL Enter #y${modID}:Parry.",
     "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",

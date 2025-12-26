@@ -12,6 +12,20 @@
     "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
   },
   {
+    "PROPER_NAME": "Counter",
+    "NAMES": [
+      "counter"
+    ],
+    "DESCRIPTION": "In the next turn, if your block is removed, enter #y Parry."
+  },
+  {
+    "PROPER_NAME": "Parry",
+    "NAMES": [
+      "parry"
+    ],
+    "DESCRIPTION": "Augments cards with this keyword."
+  },
+  {
     "PROPER_NAME": "Multiword Keyword",
     "NAMES": [
       "multiword keyword",
