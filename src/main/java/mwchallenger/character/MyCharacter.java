@@ -22,6 +22,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import mwchallenger.cards.Parry;
 
 import java.util.ArrayList;
 
@@ -143,7 +144,7 @@ public class MyCharacter extends CustomPlayer {
         retVal.add(Strike_Red.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Blue.ID);
-        retVal.add(Neutralize.ID);
+        retVal.add(Parry.ID);
 
         return retVal;
     }

@@ -9,9 +9,19 @@
       "Blizzard is a good example for this."
     ]
   },
+  "${modID}:Parry": {
+    "NAME": "Parry",
+    "DESCRIPTION": "Gain !B! block. NL Enter !Y! Parry",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
   "${modID}:SizeUp": {
     "NAME": "Size Up",
-    "DESCRIPTION": "Gain block equal to cards in hand (!B!)",
+    "DESCRIPTION": "Gain block equal to cards in hand (!B!). NL Enter Parry",
     "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
