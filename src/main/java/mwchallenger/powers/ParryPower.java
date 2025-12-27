@@ -11,11 +11,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import static mwchallenger.BasicMod.makeID;
 
 public class ParryPower extends BasePower {
-public static final String Power_ID = makeID(ParryPower.class.getSimpleName());
-private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
-private static boolean TURN_TYPE = true;
-private static final int turns = 1;
-public boolean parry_block_check = false;
+    public static final String Power_ID = makeID(ParryPower.class.getSimpleName());
+    private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
+    private static boolean TURN_TYPE = true;
+    public static final String NAME = "Parry";
+    private static final int turns = -1;
+    public boolean parry_block_check = false;
 
     public ParryPower(AbstractCreature owner, int amount) {
         super(Power_ID, TYPE, TURN_TYPE, owner, turns);
@@ -43,5 +44,8 @@ public boolean parry_block_check = false;
         AbstractPlayer p = AbstractDungeon.player;
         this.addToBot(new RemoveSpecificPowerAction(p, p,Power_ID));
         super.atStartOfTurn();
+    }
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1];
     }
 }

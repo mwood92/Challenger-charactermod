@@ -1,7 +1,7 @@
 {
-  "${modID}:Strike": {
-    "NAME": "Strike",
-    "DESCRIPTION": "Description. NL Second line.",
+  "${modID}:OneTwo": {
+    "NAME": "One-Two",
+    "DESCRIPTION": "Deal !D! damage. Counter: Deal !D! damage again.",
     "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",
@@ -11,7 +11,7 @@
   },
   "${modID}:Parry": {
     "NAME": "Parry",
-    "DESCRIPTION": "Gain !B! block. NL Enter #y${modID}:Parry.",
+    "DESCRIPTION": "Gain !B! block. NL Enter Parry.",
     "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
     "EXTENDED_DESCRIPTION": [
       "You can put more text in here.",

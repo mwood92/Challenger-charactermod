@@ -22,7 +22,9 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import mwchallenger.cards.OneTwo;
 import mwchallenger.cards.Parry;
+import mwchallenger.relics.GrippingChalkRelic;
 
 import java.util.ArrayList;
 
@@ -142,9 +144,14 @@ public class MyCharacter extends CustomPlayer {
         //If you want multiple of the same card, you have to add it multiple times.
         retVal.add(Strike_Red.ID);
         retVal.add(Strike_Red.ID);
+        retVal.add(Strike_Red.ID);
+        retVal.add(Strike_Red.ID);
+        retVal.add(Defend_Blue.ID);
+        retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Parry.ID);
+        retVal.add(OneTwo.ID);
 
         return retVal;
     }
@@ -153,7 +160,7 @@ public class MyCharacter extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
+        retVal.add(GrippingChalkRelic.ID);
 
         return retVal;
     }

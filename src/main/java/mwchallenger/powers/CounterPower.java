@@ -12,9 +12,18 @@ public class CounterPower extends BasePower{
     public static final String Power_ID = makeID(CounterPower.class.getSimpleName());
     private static final boolean TURN_TYPE = true;
     private static final AbstractPower.PowerType TYPE = PowerType.BUFF;
-    private static final int turns = 1;
+    private static final int turns = -1;
 
     public CounterPower(AbstractCreature owner, int amount) {
         super(Power_ID, TYPE, TURN_TYPE, owner, turns);
+    }
+    public void atEndOfTurn(boolean isPlayer){
+        AbstractPlayer p = AbstractDungeon.player;
+        if(isPlayer){
+            this.addToBot(new RemoveSpecificPowerAction(p, p,Power_ID));
+        }
+    }
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1];
     }
 }

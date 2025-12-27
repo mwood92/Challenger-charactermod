@@ -27,9 +27,9 @@ public class Parry extends BaseCard{
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         super.applyPowers();
-        final int finalBlock = this.baseBlock;
+        final int finalBlock = this.block;
         this.addToBot(new GainBlockAction(p,finalBlock));
-        this.addToBot(new ApplyPowerAction(p,p,new ParryPower(p,1)));
+        this.addToBot(new ApplyPowerAction(p,p,new ParryPower(p,-1)));
     }
     @Override
     public AbstractCard makeCopy() { //Optional

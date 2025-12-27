@@ -53,7 +53,7 @@ public class SizeUp extends BaseCard {
 
         // 3. Apply the block
         this.addToBot(new GainBlockAction(p, totalBlock));
-        this.addToBot(new ApplyPowerAction(p,p,new ParryPower(p,1)));
+        this.addToBot(new ApplyPowerAction(p,p,new ParryPower(p,-1)));
     }
 
     @Override

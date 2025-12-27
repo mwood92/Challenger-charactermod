@@ -5,5 +5,13 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "${modID}:GrippingChalkRelic": {
+    "NAME": "Gripping Chalk",
+    "FLAVOR": "For a deft fighter looking to regain their footing.",
+    "DESCRIPTIONS": [
+      "At the end of your opponents' turn, if your block was removed,"
+    ," draw a card."
+    ]
   }
 }
