@@ -1,43 +1,38 @@
 package mwchallenger.cards;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import mwchallenger.character.MyCharacter;
+import mwchallenger.powers.ProvokePower;
 import mwchallenger.util.CardStats;
 
-public class Strike extends BaseCard {
-    public static final String ID = makeID(Strike.class.getSimpleName());
+public class Goad extends BaseCard{
+    public static final String ID = makeID(Goad.class.getSimpleName());
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.ATTACK,
-            CardRarity.BASIC,
+            CardRarity.COMMON,
             CardTarget.ENEMY,
-            1
-    );
-
-    private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 3;
-
-    public Strike() {
+            1);
+    public Goad() {
         super(ID, info);
-
-        setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
-
-        tags.add(CardTags.STARTER_STRIKE);
-        tags.add(CardTags.STRIKE);
+        setDamage(9,11);
+        setMagic(3);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        addToBot(new DamageAction(m,new DamageInfo(p,this.damage,DamageInfo.DamageType.NORMAL)));
+        if(m.getIntentBaseDmg() > 0) {// add if statement for attack intention
+            addToBot(new ApplyPowerAction(m, p, new ProvokePower(m, this.magicNumber), this.magicNumber));
+        }
     }
-
     @Override
     public AbstractCard makeCopy() { //Optional
-        return new Strike();
+        return new Goad();
     }
 }

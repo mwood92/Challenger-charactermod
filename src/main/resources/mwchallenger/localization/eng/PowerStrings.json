@@ -5,10 +5,17 @@
       "You are Very Cool and Strong."
     ]
   },
+  "${modID}:ProvokePower": {
+    "NAME": "Provoke",
+    "DESCRIPTIONS": [
+      "For this turn, the creature intends to deal ",
+      " more damage"
+    ]
+  },
   "${modID}:ParryPower": {
     "NAME": "Parry",
     "DESCRIPTIONS": [
-      "During your opponent's turn, if your block is removed, enter #y",
+      "During your opponent's turn, if your Block is removed, enter #y",
       "Counter"
     ]
   },

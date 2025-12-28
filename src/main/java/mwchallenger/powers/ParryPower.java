@@ -18,7 +18,7 @@ public class ParryPower extends BasePower {
     private static final int turns = -1;
     public boolean parry_block_check = false;
 
-    public ParryPower(AbstractCreature owner, int amount) {
+    public ParryPower(AbstractCreature owner) {
         super(Power_ID, TYPE, TURN_TYPE, owner, turns);
     }
 
