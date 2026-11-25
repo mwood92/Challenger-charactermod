@@ -25,7 +25,7 @@
       "counter",
       "Counter"
     ],
-    "DESCRIPTION": "In the next turn, if your block is removed, enter #y Parry."
+    "DESCRIPTION": "Augments cards with this keyword."
   },
   {
     "PROPER_NAME": "Parry",
@@ -33,7 +33,7 @@
       "parry",
       "Parry"
     ],
-    "DESCRIPTION": "Augments cards with this keyword."
+    "DESCRIPTION": "Enter #y Parry. In the next combat, if your block is removed, gain this benefit and enter #Counter"
   },
   {
     "PROPER_NAME": "Multiword Keyword",

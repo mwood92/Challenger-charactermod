@@ -1,43 +1,79 @@
 {
+  "${modID}:BrambleStrike": {
+    "NAME": "Bramble Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Deal damage equal to your Thorns (!${modID}:thorns!)."
+  },
+  "${modID}:Exfoliate": {
+    "NAME": "Exfoliate",
+    "DESCRIPTION": "Remove 3X Block. For every Block removed, gain 1 Strength."
+  },
+  "${modID}:Bristle": {
+    "NAME": "Bristle",
+    "DESCRIPTION": "Gain !M! Thorns. NL Draw 1 Card."
+  },
+  "${modID}:Counterpunch": {
+    "NAME": "Counterpunch",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Counter: This costs 0."
+  },
+  "${modID}:Backpedal": {
+    "NAME": "Backpedal",
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! cards. NL Place 1 card from your hand on top of your draw pile."
+  },
+  "${modID}:Patch": {
+    "NAME": "Patch",
+    "DESCRIPTION": "Gain Block equal to your missing health (!B!)."
+  },
+  "${modID}:Rally": {
+    "NAME": "Rally",
+    "DESCRIPTION": "If you block all incoming attacks with no unblocked damage, gain !M! strength."
+  },
+  "${modID}:ShedBark": {
+    "NAME": "Shed Bark",
+    "DESCRIPTION": "Remove !B! Block. NL Deal damage equal to !M! times the block removed to ALL enemies."
+  },
+  "${modID}:Corner": {
+    "NAME": "Corner",
+    "DESCRIPTION": "Search your draw pile for a card, and then place it on top. NL Gain !B! Block. ${modID}:Parry."
+  },
+  "${modID}:BeFirst": {
+    "NAME": "Be First",
+    "DESCRIPTION": "Deal !D! damage. If this was the first card played, enter ${modID}:Counter."
+  },
+  "${modID}:StrengthAndConditioning": {
+    "NAME": "Strength and Conditioning",
+    "DESCRIPTION": "Whenever you are dealt unblocked damage, gain !M! Strength and Dexterity the following turn."
+  },
+  "${modID}:BarkChin": {
+    "NAME": "Bark Chin",
+    "DESCRIPTION": "When you take unblocked damage, reduce it by !M!."
+  },
+  "${modID}:Knockout": {
+    "NAME": "Knock Out",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Counter: Stun. NL Exhaust."
+  },
+  "${modID}:Riposte": {
+    "NAME": "Riposte",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Parry: Deal !M! damage."
+  },
+  "${modID}:Discombobulate": {
+    "NAME": "Discombobulate",
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Counter: Apply !M! Weak."
+  },
   "${modID}:Goad": {
     "NAME": "Goad",
-    "DESCRIPTION": "Deal !D! damage. Provoke !M!.",
-    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Provoke !M!."
   },
   "${modID}:OneTwo": {
     "NAME": "One-Two",
-    "DESCRIPTION": "Deal !D! damage. Counter: Deal !D! damage again.",
-    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+    "DESCRIPTION": "Deal !D! damage. NL ${modID}:Counter: Deal !D! damage again."
   },
   "${modID}:Parry": {
     "NAME": "Parry",
-    "DESCRIPTION": "Gain !B! block. NL Enter Parry.",
-    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+    "DESCRIPTION": "Gain !B! Block. NL ${modID}:Parry: Apply !M! Vulnerable."
   },
   "${modID}:SizeUp": {
     "NAME": "Size Up",
-    "DESCRIPTION": "Draw !M! cards. Gain Block equal to cards in hand (!B!). NL Enter Parry",
-    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
-    "EXTENDED_DESCRIPTION": [
-      "You can put more text in here.",
-      "If you need to use it for stuff.",
-      "Blizzard is a good example for this."
-    ]
+    "DESCRIPTION": "Draw !M! cards. NL Gain Block equal to cards in hand (!B!). NL ${modID}:Parry: Draw !M! cards."
   },
   "${modID}:ExampleCard": {
     "NAME": "Name",

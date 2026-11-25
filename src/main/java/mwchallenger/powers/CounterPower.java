@@ -14,15 +14,17 @@ public class CounterPower extends BasePower{
     private static final AbstractPower.PowerType TYPE = PowerType.BUFF;
     private static final int turns = -1;
 
-    public CounterPower(AbstractCreature owner, int amount) {
+    public CounterPower(AbstractCreature owner) {
         super(Power_ID, TYPE, TURN_TYPE, owner, turns);
     }
+    @Override
     public void atEndOfTurn(boolean isPlayer){
         AbstractPlayer p = AbstractDungeon.player;
         if(isPlayer){
             this.addToBot(new RemoveSpecificPowerAction(p, p,Power_ID));
         }
     }
+    @Override
     public void updateDescription() {
         this.description = DESCRIPTIONS[0] + DESCRIPTIONS[1];
     }

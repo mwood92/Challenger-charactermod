@@ -33,8 +33,7 @@ public class ParryPower extends BasePower {
         AbstractPlayer p = AbstractDungeon.player;
         if(p.currentBlock == 0 & parry_block_check){
             this.addToBot(new RemoveSpecificPowerAction(p, p,Power_ID));
-            this.addToBot(new ApplyPowerAction(p, p,new CounterPower(p,1)));
-
+            this.addToBot(new ApplyPowerAction(p, p,new CounterPower(p)));
         }
 
         return super.onAttacked(info, damageAmount);

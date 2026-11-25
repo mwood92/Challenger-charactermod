@@ -5,10 +5,53 @@
       "You are Very Cool and Strong."
     ]
   },
+  "${modID}:SizeUpPower": {
+    "NAME": "Size Up",
+    "DESCRIPTIONS": [
+      "The next time your block is broken, draw ",
+      " cards."
+    ]
+  },
+  "${modID}:RallyPower": {
+    "NAME": "Rally",
+    "DESCRIPTIONS": [
+      "If you block all incoming attacks with no unblocked damage, gain ",
+      "strength."
+    ]
+  },
+  "${modID}:RipostePower": {
+    "NAME": "Riposte",
+    "DESCRIPTIONS": [
+      "The next time your block is broken, deal ",
+      "damage."
+    ]
+  },
+  "${modID}:BarkChinPower": {
+    "NAME": "Bark Chin",
+    "DESCRIPTIONS": [
+      "When you receive unblocked damage, you are dealt ",
+      "less"
+    ]
+  },
+  "${modID}:StrengthAndConditioningPower": {
+    "NAME": "Strength and Conditioning",
+    "DESCRIPTIONS": [
+      "When you receive unblocked damage, gain ",
+      " Strength and ",
+      " Dexterity for the next turn."
+    ]
+  },
+  "${modID}:ParryCardPower": {
+    "NAME": "Parry (Card)",
+    "DESCRIPTIONS": [
+      "When you parry deal apply",
+      " Vulnerable."
+    ]
+  },
   "${modID}:ProvokePower": {
     "NAME": "Provoke",
     "DESCRIPTIONS": [
-      "For this turn, the creature intends to deal ",
+      "For this turn, the creature intends to deal #b",
       " more damage"
     ]
   },

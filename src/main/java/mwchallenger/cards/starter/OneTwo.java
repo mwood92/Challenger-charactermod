@@ -1,4 +1,4 @@
-package mwchallenger.cards;
+package mwchallenger.cards.starter;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -7,13 +7,15 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import mwchallenger.cards.BaseCard;
 import mwchallenger.character.MyCharacter;
 import mwchallenger.powers.CounterPower;
 import mwchallenger.util.CardStats;
 
-public class OneTwo extends BaseCard{
+public class OneTwo extends BaseCard {
     public static final String ID = makeID(OneTwo.class.getSimpleName());
-    public static final int setDamage = 6;
+    public static final int DAMAGE = 6;
+    public static final int UPG_DAMAGE = 2;
     private static final CardStats info = new CardStats(
             MyCharacter.Meta.CARD_COLOR,
             CardType.ATTACK,
@@ -24,7 +26,7 @@ public class OneTwo extends BaseCard{
 
     public OneTwo() {
         super(ID, info);
-        this.baseDamage = setDamage;
+        setDamage(DAMAGE,UPG_DAMAGE);
     }
 
     public void applyPowers()
